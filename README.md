@@ -1,49 +1,72 @@
-# Travel Memory
+# Travel Memory - AWS Deployment
 
-`.env` file to work with the backend after creating a database in mongodb: 
+## Project By
+Maheshwari
 
-```
-MONGO_URI='ENTER_YOUR_URL'
-PORT=3001
-```
+## GitHub Repository
+https://github.com/aeupsc-png/TravelMemory
 
-Data format to be added: 
+## Live Website
+https://travelmemoryb17.xyz
 
-```json
-{
-    "tripName": "Incredible India",
-    "startDateOfJourney": "19-03-2022",
-    "endDateOfJourney": "27-03-2022",
-    "nameOfHotels":"Hotel Namaste, Backpackers Club",
-    "placesVisited":"Delhi, Kolkata, Chennai, Mumbai",
-    "totalCost": 800000,
-    "tripType": "leisure",
-    "experience": "Lorem Ipsum, Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum, ",
-    "image": "https://t3.ftcdn.net/jpg/03/04/85/26/360_F_304852693_nSOn9KvUgafgvZ6wM0CNaULYUa7xXBkA.jpg",
-    "shortDescription":"India is a wonderful country with rich culture and good people.",
-    "featured": true
-}
-```
+## Project Overview
+Travel Memory is a MERN Stack application that allows users to share and manage travel experiences.
 
+## Technologies Used
 
-For frontend, you need to create `.env` file and put the following content (remember to change it based on your requirements):
-```bash
-REACT_APP_BACKEND_URL=http://localhost:3001
-```
+- React
+- Node.js
+- Express.js
+- MongoDB
+- Nginx
+- AWS EC2
+- AWS Application Load Balancer
+- AWS Auto Scaling Group
+- AWS Certificate Manager (ACM)
+- Cloudflare
 
-## How to run BE
+## Deployment Steps
 
-Note: Make sure you have the .env file already added
-```bash
-cd backend
-npm install
-node index.js
-```
+### Backend
+- Cloned the repository.
+- Configured the `.env` file.
+- Started the backend using PM2.
+- Configured Nginx as a reverse proxy.
 
-## How to run FE
-Note: Make sure you have the .env file already added
-```bash
-cd frontend
-npm install
-npm start
-```
+### Frontend
+- Updated the frontend API URL.
+- Built the React application.
+- Served the frontend through Nginx.
+
+### Load Balancer
+- Created an Application Load Balancer.
+- Created a Target Group.
+- Registered EC2 instances.
+- Configured health checks.
+
+### Auto Scaling
+- Created a Launch Template.
+- Created an Auto Scaling Group.
+- Attached the Auto Scaling Group to the Load Balancer.
+
+### Cloudflare
+- Connected the custom domain.
+- Added A and CNAME DNS records.
+- Configured SSL/TLS.
+- Enabled HTTPS.
+
+## Features
+
+- EC2 Deployment
+- Reverse Proxy using Nginx
+- Load Balancing
+- Auto Scaling
+- HTTPS Enabled
+- Custom Domain
+- Cloudflare Integration
+
+## Author
+
+Maheshwari
+
+GitHub: https://github.com/aeupsc-png
