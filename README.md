@@ -1,11 +1,5 @@
 # Travel Memory - AWS Deployment
 
-## Project By
-Maheshwari
-
-## GitHub Repository
-https://github.com/aeupsc-png/TravelMemory
-
 ## Live Website
 https://travelmemoryb17.xyz
 
